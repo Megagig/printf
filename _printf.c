@@ -1,11 +1,11 @@
-#include"main.h"
+#include "main.h"
 
 /**
- * _printf - acts like the original printf
- * @format: input as string
- * Return: the number of characters printed
+ * _printf - formatted output conversion and print data.
+ * @format: input string.
+ *
+ * Return: number of chars printed.
  */
-
 int _printf(const char *format, ...)
 {
 	unsigned int i = 0, len = 0, ibuf = 0;
@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 				else
 				{
 					len += function(arguments, buffer, ibuf);
-					i += get_id_no(format, i + 1);
+					i += ev_print_func(format, i + 1);
 				}
 			} i++;
 		}
