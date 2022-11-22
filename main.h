@@ -1,5 +1,6 @@
-#ifndef MAIN_H
-#define MAIN_H
+36 lines (32 sloc)  1.13 KB
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 #include <stdarg.h>
 #include <unistd.h>
